@@ -1,0 +1,18 @@
+body{
+    background-color: grey;
+}
+h1{
+    color: red;
+    background-color: pink;
+}
+li{
+    color: green;
+    background-color: aquamarine;
+    text-align: start;
+}
+p{
+    background-color: bisque;
+    text-decoration: wavy;
+    color: purple;  
+    font-size: large;
+}
