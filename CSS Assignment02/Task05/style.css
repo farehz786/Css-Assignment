@@ -1,0 +1,28 @@
+
+ body {
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 50px 0;
+      
+    }
+
+    nav {
+      display: flex;
+      justify-content: last baseline;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+    }
+
+    main {
+      padding: 20px;
+    }
+ 
