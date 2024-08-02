@@ -1,0 +1,46 @@
+body {
+    margin: auto;
+}
+
+.parent {
+    margin: auto;
+    width: 1280px;
+    height: 700px;
+    display: flex;
+    background-color: lightgray;
+}
+
+.maincontent {
+    margin-top: 300px;
+    border: 3px;
+    width: 700px;
+    float: left;
+    height: auto;
+}
+
+.login {
+    float: right;
+    width: 300px;
+    height: 330px;
+    margin-right: 10px;
+    margin-top: 0px;
+    background-color: whitesmoke;
+    margin-top: 230px;
+    border-radius: 10px;
+}
+
+h1 {
+
+    font-family: 'Segoe UI';
+    margin-left: 200px;
+    font-size: x-large;
+    color: rgb(3, 53, 255);
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'Segoe UI';
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 200px;
+}
