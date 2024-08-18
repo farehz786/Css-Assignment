@@ -1,0 +1,648 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: Arial;
+    padding: 0;
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;*/
+}
+
+.main {
+    background-color: #f5f5f5;
+    /* padding: 20px; */
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;*/
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    /* Adjust the color as per your preference */
+    padding: 10px 20px;
+}
+
+.logo {
+    width: auto;
+    height: 75px;
+    margin: auto;
+    /* Pushes the logo to the left */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+}
+
+.navbar ul li {
+    color: white;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.btn1 {
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 15px;
+    width: 100%;
+}
+
+.btn2 {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    border-radius: 50px;
+    padding: 15px;
+    background-color: red;
+    align-items: center;
+    width: 100%;
+}
+
+.icon1 {
+    font-size: 25px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.section1 {
+    padding: 0;
+    /*margin: 0;*/
+}
+
+.section1 img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.salt {
+    font-family: 'futurak';
+}
+
+.section2 {
+    padding: 20px;
+    /*margin: 0;*/
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.section2_text {
+    text-align: center;
+}
+
+.section2_images {
+    /*max-width: 100%;
+    object-fit: contain;
+    height: auto;*/
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+
+    /* align-items: center; */
+    margin-top: 20px;
+    /* Add gap above images */
+}
+
+.section2_image {
+    /*max-width: 100%;
+    object-fit: contain;
+    height: auto;*/
+    width: 175px;
+    /* 3 images with gaps */
+    /* Maintain aspect ratio */
+    padding: 15px;
+
+}
+
+
+
+
+
+.section2_images ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    /* Add margin above the li */
+    text-align: center;
+}
+
+.section_image_gap {
+    margin: 0 10px;
+    /* Adjust the gap between images */
+}
+
+.section2_images ul li {
+
+    cursor: pointer;
+    color: white;
+}
+
+.btn3 {
+    text-align: center;
+    display: block;
+    width: 174px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 500;
+    /* font-size: 14px; */
+    line-height: 50px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 24px;
+    /* margin-left: 0; */
+}
+
+.section3_text {
+    background-color: #494848;
+
+    color: white;
+    text-align: center;
+    /* background-color: #f5f5f5; */
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.section3_table table {
+     /* Default table styling */
+ 
+    width: 100%; /* Make the table responsive */
+    border-collapse: collapse;
+
+    display: flex;
+    justify-content: center;
+    /* padding-left: 150px; */
+    /* padding-right: 150px; */
+    background-color: #494848;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: 20px; */
+    /* padding: 20px; */
+    /* background-color: white; */
+    /* color: black; */
+}
+th, td {
+    border: 1px solid #494848;
+    padding: 8px;
+    text-align: center;
+}
+.section3_images {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;  /* Maintain aspect ratio */
+} 
+.section3_col {
+    /* background-color: #f5f5f5; */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-image-width: auto;
+    image-rendering: auto;
+    max-width: 100%; /* Make the image responsive */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.franchise_info {
+    color: white;
+}
+
+.city {
+    color: red;
+    font-size: 16px;
+}
+
+
+.section4 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    background-color: black;
+    color: white;
+    /*display: block;
+    text-align: center;*/
+
+}
+
+.section4_text{
+    text-align: center;
+}
+
+.section4_images{
+    /* width: 40%; */
+
+    display: flex;
+    justify-content: center;
+
+    /* align-items: center; */
+    margin-top: 20px;
+    /* Add gap above images */
+}
+
+.section4_image {
+
+    width: 190px;
+    /* 3 images with gaps */
+
+    height: 300;
+    /* Maintain aspect ratio */
+    padding: 15px;
+    /* background-color: white; */
+}
+
+
+
+
+
+.section4_images ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    /* Add margin above the li */
+    text-align: center;
+}
+
+.section_image_gap {
+    margin: 0 10px;
+    /* Adjust the gap between images */
+}
+
+.section4_images ul li {
+
+    cursor: pointer;
+    color: white;
+}
+
+.btn5 {
+    text-align: center;
+    /* display: block; */
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 24px;
+    /* margin-left: 0; */
+}
+
+.section_image_gap .salt {
+    font-weight: bold;
+}
+
+.section_image_gap>p {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+
+.section5 ,.section5_table {
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    
+    width: 100%; /* Make the table responsive */
+     border-collapse: collapse;
+    
+    background-color: #494848;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section5_text {
+    background-color: #494848;
+    color: white;
+    /* background-color: #f5f5f5; */
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+}
+
+.section5_col {
+    /* background-color: #f5f5f5; */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #494848;
+    margin: 0%;
+    /* margin: 0; */
+    max-width: 100%;
+    object-fit: inherit;
+    height: auto;
+
+
+}
+
+td {
+    padding: 10px;
+    margin: 10%;
+    /* margin: 0; */
+    background-color: #494848;
+}
+
+.franchise_info {
+    color: white;
+    background-color: #494848;
+    width: 100%;
+}
+
+.city {
+    color: red;
+    font-size: 16px;
+    background-color: #494848;
+}
+
+
+.section6_images {
+    /* width: 40%; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    /* align-items: center; */
+    margin-top: 20px;
+    /* Add gap above images */
+}
+
+.section6_image_gap {
+    margin: 10px;
+    align-items: center;
+    background-color: white;
+    width: 130px;
+    /* 3 images with gaps */
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    height: 190px;
+    /* Maintain aspect ratio */
+    padding: 10px;
+    /* background-color: white; */
+}
+
+.section6_image_gap>i {
+    margin-top: 20px
+}
+
+.opening {
+    margin-top: 15px;
+    font-size: 8px;
+    color: red;
+}
+
+.section6_image_gap>span {
+    font-weight: bold;
+}
+
+.section7 {
+    padding: 20px;
+    /*width: 100%;*/
+    margin: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.grid_style {
+    display: flex;
+    justify-content: center;
+}
+
+.section7_image {
+    width: 150px;
+    /* 3 images with gaps */
+
+    height: 150px;
+    /* Maintain aspect ratio */
+    padding: 15px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: rgb(16, 15, 15);
+    display: flex;
+    justify-content: center;
+    padding: 50px 40px 150px 50px;
+    color: white;
+    gap: 50px;
+    font-size: 12px;
+    line-height: 20px;
+    ;
+
+}
+
+.intro {
+    width: 300px;
+}
+
+.footer_image {
+    width: 120px;
+    height: 50px;
+
+}
+
+.footer_end {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(197, 195, 195);
+    background-color: black;
+    color: white;
+    font-size: 9px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.navbar_footer>ul {
+    list-style: none;
+    line-height: 30px;
+    width: 100px;
+}
+
+.follow {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.follow>div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 70px
+}
+/* Media query to convert rows into columns */
+@media screen and (max-width: 576px) {
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0px 10px;
+    }
+    .navbar ul li {
+        margin: 10px 0px 10px;
+    }
+    div.section2_images{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img.section3_image{ 
+        width: 300px;
+        height: auto;
+
+    }table {
+        display: block;
+    }
+    thead {
+        display: none; /* Hide table header */
+    }
+    tbody, tr, td {
+        display: block;
+        width: auto
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        text-align: left; /* Align the content to the right */
+        padding-right: 50%; /* Create space for the label */
+        position: relative;
+    }
+    td::before {
+        content: attr(data-label); /* Use the `data-label` attribute for each cell */
+        position: absolute;
+        right: 0;
+        width: 50%; /* Label width */
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: right; /* Align label to the left */
+    }
+    div.section4 {
+        display: flex;
+        flex-direction: column;
+    }
+    div.section4_images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.grid_style{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.footer {
+        display: flex;
+        flex-direction: column   
+    }
+        
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0px 10px;
+    }
+    .navbar ul li {
+        margin: 10px 0px 10px;
+    }
+    div.section2_images{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img.section3_image{ 
+        width: 500px;
+        height: auto;    
+    }
+    table {
+        display: block;
+    }
+    thead {
+        display: none; /* Hide table header */
+    }
+    tbody, tr, td {
+        display: block;
+        width: auto
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        text-align: left; /* Align the content to the right */
+        padding-right: 50%; /* Create space for the label */
+        position: relative;
+    }
+    td::before {
+        content: attr(data-label); /* Use the `data-label` attribute for each cell */
+        position: absolute;
+        right: 0;
+        width: 50%; /* Label width */
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: right; /* Align label to the left */
+    }
+    div.section4 {
+        display: flex;
+        flex-direction: column;
+    }
+    div.section4_images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.grid_style{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.footer {
+        display: flex;
+        flex-direction: column   
+    }
+}
+@media screen and (max-width: 992px){
+    img.section3_image{ 
+        width: 300px;
+        height: auto;
+    }
+    div.grid_style{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1200px){
+    img.section3_image{ 
+        width: 300px;
+        height: auto;
+    }
+}
+/*\end{code}*/
