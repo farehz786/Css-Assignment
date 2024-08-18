@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.nav-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 20px;
+  height: 80px;
+  color: black;
+  z-index: 1000;
+}
+
+.nav-container .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.nav-container .nav-links li {
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.nav-container .nav-links li:hover,
+.nav-container .icons i:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  filter: brightness(0) invert(0);
+}
+
+.nav-container .icons {
+  display: flex;
+  font-size: 25px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-container .icons i {
+  border-radius: 50%;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.hamburger {
+  display: none;
+  font-size: 25px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .nav-container {
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-container .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+
+  .nav-container .icons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    order: 2; /* Ensure it appears after the logo */
+  }
+
+  .logo {
+    order: 1; /* Ensure the logo is on the left */
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-links + .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  flex-direction: column;
+}
+
+.pages li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 10px;
+  color: #888888;
+  scroll-snap-align: start;
+}
+
+.pages h1 {
+  font-size: 22px;
+}
+
+.pages p {
+  color: black;
+  font-size: 22px;
+}
+
+.pages a {
+  color: #333;
+  font-size: 22px;
+}
+
+.pages a:hover {
+  color: black;
+}
+
+.pages li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.page-info h1 {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.page-info h1,
+.page-info p {
+  font-weight: 500;
+}
+
+.page-info.model-s h1 {
+  color: white;
+}
+
+.page-info.model-s p {
+  color: white;
+}
+
+.page-info.model-s a {
+  color: rgb(207, 207, 207);
+}
+
+.page-info.model-s a:hover {
+  color: white;
+}
+
+/* .page-info-Cybertruck h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+} */
+.page-info-Cybertruck .overly {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 40%;
+  width: 300px;
+  height: 200px;
+}
+
+.page-info-solar-panels {
+  color: white;
+}
+
+.page-info-solar-panels h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.page-info-solar-panels a {
+  color: rgb(207, 207, 207);
+}
+
+.page-info-solar-panels a:hover {
+  color: white;
+}
+
+.page-footer .buttons {
+  margin-bottom: 100px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: row; /* Stack buttons vertically */
+}
+
+.page-footer .buttons button {
+  font-size: 13px;
+  padding: 7px 80px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 250px; /* Ensure buttons take full width */
+}
+
+@media (max-width: 768px) {
+  .page-footer .buttons {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    width: 100%; /* Ensure buttons take full width in column layout */
+    align-items: center; /* Center buttons horizontally */
+  }
+
+  .page-footer .buttons button {
+    width: 65%; /* Adjust button width for small screens */
+  }
+}
+
+.page-footer .buttons button:first-child {
+  background-color: rgba(34, 34, 34, 0.8);
+  color: #fff;
+}
+
+.page-footer .buttons button:last-child {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.page-footer .buttons.inverted button:first-child {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #333;
+}
+
+.page-footer .buttons.inverted button:last-child {
+  background-color: rgba(34, 34, 34, 0.8);
+  color: #fff;
+}
+
+.page-footer .buttons.inverted2 button:last-child {
+  background-color: white;
+  color: black;
+}
+
+.page-footer p,
+.page-footer a {
+  font-size: 12px;
+  color: #fff;
+}
+
+.page-footer .buttons.demo-drive button {
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.footer {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  scroll-snap-type: none;
+}
+
+.footer p {
+  color: rgb(180, 180, 180);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.footer a {
+  font-size: 11px;
+  color: rgb(180, 180, 180);
+}
+
+.footer a:hover {
+  font-size: 11px;
+  color: white;
+}
+
+.footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer nav ul li {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  padding-top: 60px;
+}
+
+.footer nav ul li a {
+  text-decoration: none;
+}
+
+/* New media queries for smaller devices */
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    height: auto;
+  }
+
+  .nav-container .nav-links {
+    font-size: 14px;
+  }
+
+  .pages h1 {
+    font-size: 18px;
+  }
+
+  .pages p,
+  .pages a {
+    font-size: 18px;
+  }
+
+  .page-info h1 {
+    font-size: 32px;
+  }
+
+  .page-info-Cybertruck .overly {
+    width: 250px;
+    height: 150px;
+    margin-left: 25%;
+  }
+}
